@@ -1,7 +1,11 @@
-﻿"""
+""
 Étude de la caractéristique d'un conducteur ohmnique.
 Niveau : Seconde
 Chapitre : 11 Électricité
+
+
+
+
 """
 import matplotlib.pyplot as plt
 import numpy as np
@@ -9,9 +13,13 @@ import numpy as np
 
 #### Fonction
 def  calculer_coefdirecteur_modele(I,U):
-    delta_I = sum(I)/len(I)
-    delta_U = sum(U)/len(U)
-    a = delta_U/delta_I
+  """
+  Cette fonction n'est pas valide, elle doit être complétés pour pouvoir être utilisée
+  suivre les indications disponnibles en commentaires
+  """
+    Xmoyen = sum(?)/len(?)   # Remplacer les ? par une variable contenant une liste
+    Ymoyen = sum(?)/len(?)   # Remplacer les ? par une variable contenant une liste
+    a = ???                  # Remplacer les ??? par l'expression qui permet de calculer le coefficient a
     return a
 
 def tracer_modele(a):
@@ -33,9 +41,9 @@ def afficher_graphe():
     plt.plot(I, U, 'r+', markersize=9)
     plt.xlim(0.00, 0.55)
     plt.ylim(0.00, 13)
-    plt.xlabel("Intensité I  (en A)")
-    plt.ylabel("Tension U (en V)")
-    plt.title("Caractéristique U = f(I)")
+    plt.xlabel("??????????") # Remplacer les ??? par une légende adapté
+    plt.ylabel("??????????") # Remplacer les ??? par une légende adapté
+    plt.title("???????????") # Remplacer les ??? par une légende adapté
     plt.grid()
 
     # Enregistrement sous la forme d'une image
@@ -47,13 +55,15 @@ def afficher_graphe():
 
 ##### Programme principal
 ## Données expérimentales
-U =[0.0, 3.0, 4.42, 6.03, 7.55, 9.08, 11.93]
-I =[0.0, 0.13, 0.19, 0.23, 0.29, 0.36, 0.49]
+U =[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] # Modifiez cette liste par vos données
+I =[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] # Modifiez cette liste par vos données
 
 
-#(a, b) = calculer_modele(X=i, Y=u)
-a= calculer_coefdirecteur_modele(I, U)
-tracer_modele(a)
-afficher_equation_modele(a)
+
+# a = calculer_coefdirecteur_modele(I, U)
+# Remplacer ce commentaire par l'appel de la fonction permétant de tracer le modèle
+# Remplacer ce commentaire par l'appel de la fonction permétant l'affichage de l'équation du modéle
+
+
+
 afficher_graphe()
-
