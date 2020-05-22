@@ -3,39 +3,17 @@
 Niveau : Seconde
 Chapitre : 11 Électricité
 
-
-
-
+Consignes : 
+  pour untiliser ce programme, il vous sera nécéssaire de remplacer les données expériementalles
+  pour que le graphique affiché soit complet, il vous sera nécéssaire  de Remplacer quelques ? dans la fonction afficher_graphe()
+  Vous trouvez plus d informations dans le programme sous forme de commentaire
 """
+
 import matplotlib.pyplot as plt
 import numpy as np
 
 
 #### Fonction
-def  calculer_coefdirecteur_modele(I,U):
-  """
-  Cette fonction n'est pas valide, elle doit être complétés pour pouvoir être utilisée
-  suivre les indications disponnibles en commentaires
-  """
-    Xmoyen = sum(?)/len(?)   # Remplacer les ? par une variable contenant une liste
-    Ymoyen = sum(?)/len(?)   # Remplacer les ? par une variable contenant une liste
-    a = ???                  # Remplacer les ??? par l'expression qui permet de calculer le coefficient a
-    return a
-
-def tracer_modele(a):
-    X =[x /10 for x in range(60)]
-    Y = [x*a for x in X]
-    plt.plot(X, Y, "b-", label="Modelisation")
-
-
-def afficher_equation_modele(a):
-    equation = "Équation du modèle : Y = a X"
-    a = "Avec a =" + str(round(a, 1))
-    plt.text(0.05, 11, equation, color="blue")
-    plt.text(0.05, 10.5, a, color="blue")
-
-
-
 def afficher_graphe():
     """Configuration de la représentation graphique et affichage"""
     plt.plot(I, U, 'r+', markersize=9)
@@ -59,11 +37,5 @@ U =[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] # Modifiez cette liste par vos données
 I =[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] # Modifiez cette liste par vos données
 
 
-
-# a = calculer_coefdirecteur_modele(I, U)
-# Remplacer ce commentaire par l'appel de la fonction permétant de tracer le modèle
-# Remplacer ce commentaire par l'appel de la fonction permétant l'affichage de l'équation du modéle
-
-
-
+## Appels de fontion
 afficher_graphe()
