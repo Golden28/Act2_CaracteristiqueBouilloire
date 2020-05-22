@@ -4,8 +4,8 @@ Niveau : Seconde
 Chapitre : 11 Électricité
 
 Consignes : 
-  pour untiliser ce programme, il vous sera nécéssaire de remplacer les données expériementalles
-  pour que le graphique affiché soit complet, il vous sera nécéssaire  de Remplacer quelques ? dans la fonction afficher_graphe()
+  Pour untiliser ce programme, il vous sera nécéssaire de remplacer les données expériementalles
+  Pour que le graphique affiché soit complet, il vous sera nécéssaire  de Remplacer quelques ? dans la fonction afficher_graphe()
   Vous trouvez plus d informations dans le programme sous forme de commentaire
 """
 
